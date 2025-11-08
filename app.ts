@@ -19,6 +19,8 @@ let myCar: TVehicle = {
 console.log(
   `My car is a ${myCar.color} ${myCar.model} from ${myCar.year} with ${myCar.power} HP.`
 );
+// Add direct console.log for the object
+console.log(myCar);
 
 // 3. Extending interface
 interface IVehicle {
@@ -89,5 +91,6 @@ const boats = new VehicleService<IBoat>();
 cars.add(car);
 boats.add(boat);
 
-console.log("Cars:", cars.list());
-console.log("Boats:", boats.list());
+// Remove the labels and just log the arrays directly
+console.log(cars.list());
+console.log(boats.list());
